@@ -1,0 +1,3 @@
+var post = document.querySelector('#post-<%= j @post.id %>')
+post.parentNode.removeChild(post)
+document.querySelector('#post-content').innerHTML = ''

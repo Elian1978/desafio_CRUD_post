@@ -1,0 +1,17 @@
+<%= form_with(model: post, local: false) do |form| %>
+
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit data: {disable_with: "se está enviando"} %>
+  </div>
+<% end %>
